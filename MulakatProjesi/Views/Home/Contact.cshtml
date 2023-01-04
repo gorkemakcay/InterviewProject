@@ -1,0 +1,47 @@
+﻿@*<div class="row" style="background-color: white; height: 100%;">
+        <div class="col-12">
+
+        </div>
+    </div>*@
+<div class="card text-center bg-white p-3" style="width: 50%;">
+    <h3 class="text-start">Bize Ulaşın</h3>
+    <br />
+    <div class="row">
+        <div class="col-6">
+            <input id="fullName" class="form-control" style="background-color: #F7F7F7;" type="text" name="NameSurname" placeholder="Adayın Adı Soyadı" required maxlength="128"/>
+        </div>
+        <div class="col-6">
+            <input id="phoneNumber" class="form-control" style="background-color: #F7F7F7;" type="tel" name="PhoneNumber" placeholder="Telefon Numarası (5XXXXXXXX)" required minlength="10" maxlength="10"/>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-12">
+            <input id="email" class="form-control" style="background-color: #F7F7F7;" type="email" name="EMail" placeholder="E-Posta Adresi" required/>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-12">
+            <textarea id="message" class="form-control" style="background-color: #F7F7F7;" placeholder="Write your message..." required maxlength="256"></textarea>
+        </div>
+    </div>
+
+    <br />
+    <div id="validationSummary"></div>
+    <br />
+
+    <div class="row">
+        <div class="col-12">
+            <button class="btn" type="button" style="background-color: #A11816; color: white; width: 100%" onclick="passTheInterview()">Gönder</button>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/contact.js"></script>
+}
